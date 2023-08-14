@@ -1,3 +1,49 @@
+<template>
+  <div class="header-full-header">
+    <nav class="header-full-nav">
+      <div class="header-full-container">
+        <router-link to="/" class="header-full-navlink Large">
+          Soft UI Design System
+        </router-link>
+        <div class="header-full-menu">
+          <router-link to="/" class="header-full-navlink1 Large">
+            Home
+          </router-link>
+          <router-link to="/profile" class="header-full-navlink2 Large">
+            Profile
+          </router-link>
+          <router-link to="/coming-soon" class="header-full-navlink3 Large">
+            Coming Soon
+          </router-link>
+        </div>
+        <div class="header-full-container1">
+          <div class="header-full-container2">
+            <primary-pink-button button="buy now"></primary-pink-button>
+          </div>
+          <svg viewBox="0 0 1024 1024" class="header-full-icon">
+            <path
+              d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </div>
+</template>
+
+<script>
+import PrimaryPinkButton from './primary-pink-button'
+
+export default {
+  name: 'HeaderFull',
+  props: {},
+  components: {
+    PrimaryPinkButton,
+  },
+}
+</script>
+
+<style scoped>
 .header-full-header {
   width: 100%;
   height: 60px;
@@ -112,3 +158,4 @@
     display: none;
   }
 }
+</style>

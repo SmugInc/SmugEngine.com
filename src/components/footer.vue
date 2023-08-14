@@ -1,3 +1,43 @@
+<template>
+  <footer class="footer-footer">
+    <div class="footer-container">
+      <div class="footer-container1">
+        <span class="footer-text">SOFT</span>
+        <span>Copyright © 2021 Soft by Creative Tim.</span>
+      </div>
+      <div class="footer-container2">
+        <div class="footer-container3">
+          <span class="footer-text02 Large">Company</span>
+          <span class="footer-text03 Large">About Us</span>
+          <span class="footer-text04 Large">Careers</span>
+          <span class="footer-text05 Large">Press</span>
+        </div>
+        <div class="footer-container4">
+          <span class="footer-text06 Large">Pages</span>
+          <span class="footer-text07 Large">Login</span>
+          <span class="footer-text08 Large">Register</span>
+          <span class="footer-text09 Large">About</span>
+        </div>
+        <div class="footer-container5">
+          <span class="footer-text10 Large">Products</span>
+          <span class="footer-text11 Large">Free</span>
+          <span class="footer-text12 Large">PRO</span>
+          <span class="footer-text13 Large">Latest</span>
+        </div>
+      </div>
+    </div>
+    <img alt="image" src="/waves-white.svg" class="footer-image" />
+  </footer>
+</template>
+
+<script>
+export default {
+  name: 'Footer',
+  props: {},
+}
+</script>
+
+<style scoped>
 .footer-footer {
   width: 100%;
   height: auto;
@@ -163,3 +203,4 @@
     margin-left: var(--dl-space-space-doubleunit);
   }
 }
+</style>

@@ -1,3 +1,24 @@
+<template>
+  <div class="outline-gray-button-container">
+    <button class="outline-gray-button-button button ButtonSmall">
+      {{ button }}
+    </button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'OutlineGrayButton',
+  props: {
+    button: {
+      type: String,
+      default: 'Button',
+    },
+  },
+}
+</script>
+
+<style scoped>
 .outline-gray-button-container {
   display: flex;
   position: relative;
@@ -17,3 +38,4 @@
   cursor: pointer;
   transform: scale(1.02);
 }
+</style>

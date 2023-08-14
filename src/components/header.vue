@@ -1,3 +1,73 @@
+<template>
+  <div data-role="Header" class="header-header">
+    <nav class="header-nav">
+      <div class="header-container">
+        <router-link to="/" class="header-navlink Large">SmugEngine</router-link>
+        <div class="header-menu">
+          <router-link to="/" class="header-navlink1 Large">Home</router-link>
+          <router-link to="/profile" class="header-navlink2 Large">
+            Profile
+          </router-link>
+          <router-link to="/coming-soon" class="header-navlink3 Large">
+            Coming Soon
+          </router-link>
+        </div>
+        <div class="header-container1">
+          <div class="header-container2"></div>
+          <div data-role="BurgerMenu" class="header-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="header-icon">
+              <path
+                d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div data-role="MobileMenu" class="header-mobile-menu">
+      <div class="header-top">
+        <router-link to="/" class="header-navlink4 Large">
+          Soft UI Design System
+        </router-link>
+        <div data-role="CloseMobileMenu" class="header-close-menu">
+          <svg viewBox="0 0 1024 1024" class="header-icon2">
+            <path
+              d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div class="header-mid">
+        <div class="header-menu1">
+          <router-link to="/" class="header-navlink5 Large">Home</router-link>
+          <router-link to="/profile" class="header-navlink6 Large">
+            Profile
+          </router-link>
+          <router-link to="/coming-soon" class="header-navlink7 Large">
+            Coming Soon
+          </router-link>
+        </div>
+      </div>
+      <div class="header-bot">
+        <primary-pink-button button="buy now"></primary-pink-button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import PrimaryPinkButton from './primary-pink-button'
+
+export default {
+  name: 'Header',
+  props: {},
+  components: {
+    PrimaryPinkButton,
+  },
+}
+</script>
+
+<style scoped>
 .header-header {
   top: 0px;
   left: auto;
@@ -211,3 +281,4 @@
     display: none;
   }
 }
+</style>

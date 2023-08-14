@@ -1,11 +1,32 @@
-.primary-blue-button-container {
+<template>
+  <div class="primary-pink-button-container">
+    <button class="primary-pink-button-button button ButtonSmall">
+      {{ button }}
+    </button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'PrimaryPinkButton',
+  props: {
+    button: {
+      type: String,
+      default: 'Button',
+    },
+  },
+}
+</script>
+
+<style scoped>
+.primary-pink-button-container {
   display: flex;
   position: relative;
 }
-.primary-blue-button-button {
+.primary-pink-button-button {
   color: var(--dl-color-gray-white);
   outline: none;
-  background: linear-gradient(310deg,#2152ff,#21d4fd);
+  background: linear-gradient( 310deg ,#7928ca,#ff0080);
   box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%), 0 2px 4px -1px rgb(0 0 0 / 7%);
   transition: all .15s ease-in;
   padding-top: var(--dl-space-space-triplequarterunit);
@@ -15,7 +36,8 @@
   padding-right: var(--dl-space-space-unitandahalfunit);
   padding-bottom: var(--dl-space-space-triplequarterunit);
 }
-.primary-blue-button-button:hover {
+.primary-pink-button-button:hover {
   cursor: pointer;
   transform: scale(1.02);
 }
+</style>

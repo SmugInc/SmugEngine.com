@@ -1,3 +1,24 @@
+<template>
+  <div class="secondary-button-container">
+    <button class="secondary-button-button button ButtonSmall">
+      {{ button }}
+    </button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'SecondaryButton',
+  props: {
+    button: {
+      type: String,
+      default: 'Button',
+    },
+  },
+}
+</script>
+
+<style scoped>
 .secondary-button-container {
   display: flex;
   position: relative;
@@ -21,3 +42,4 @@
   cursor: pointer;
   transform: scale(1.02);
 }
+</style>

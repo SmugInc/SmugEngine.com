@@ -1,3 +1,29 @@
+<template>
+  <div class="next-button-container">
+    <button class="next-button-button button">
+      <span class="next-button-text">{{ button }}</span>
+      <svg viewBox="0 0 1024 1024" class="next-button-icon">
+        <path
+          d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+        ></path>
+      </svg>
+    </button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'NextButton',
+  props: {
+    button: {
+      type: String,
+      default: 'Button',
+    },
+  },
+}
+</script>
+
+<style scoped>
 .next-button-container {
   display: flex;
   position: relative;
@@ -27,3 +53,4 @@
 .next-button-icon:hover {
   transform: translateX(5px);
 }
+</style>

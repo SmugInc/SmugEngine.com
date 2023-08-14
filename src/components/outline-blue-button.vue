@@ -1,3 +1,24 @@
+<template>
+  <div class="outline-blue-button-container">
+    <button class="outline-blue-button-button button ButtonSmall">
+      {{ button }}
+    </button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'OutlineBlueButton',
+  props: {
+    button: {
+      type: String,
+      default: 'Button',
+    },
+  },
+}
+</script>
+
+<style scoped>
 .outline-blue-button-container {
   display: flex;
   position: relative;
@@ -19,3 +40,4 @@
 .outline-blue-button-button:hover {
   transform: scale(1.02);
 }
+</style>
