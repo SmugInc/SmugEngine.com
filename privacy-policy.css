@@ -1,0 +1,49 @@
+/* privacy-policy.css */
+
+body {
+    font-family: sans-serif; /* Okunabilir bir font ailesi */
+    line-height: 1.6;
+    color: #333; /* Koyu gri metin rengi */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Hafif gri arka plan */
+}
+
+.privacy-container {
+    max-width: 800px; /* İçerik genişliğini sınırla */
+    margin: 40px auto; /* Üst/alt boşluk ve otomatik yan boşluklarla ortala */
+    padding: 30px;
+    background-color: #fff; /* Beyaz arka plan */
+    border-radius: 8px; /* Köşeleri yuvarlat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+h1 {
+    color: #2c3e50; /* Başlık için daha koyu bir renk */
+    border-bottom: 2px solid #eee; /* Başlığın altına ince bir çizgi */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #34495e; /* Alt başlıklar için renk */
+    margin-top: 30px; /* Bölümler arası boşluk */
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px; /* Paragraflar arası boşluk */
+    color: #555; /* Paragraf metni için biraz daha açık gri */
+}
+
+section {
+    margin-bottom: 30px; /* Bölümler arası daha fazla boşluk */
+}
+
+/* İsteğe bağlı: Header ve Footer için yer tutucu stiller (Eğer component'lar eklenirse) */
+/*
+[data-thq-component-name="header"],
+[data-thq-component-name="footer"] {
+    /* Header/Footer stilleri buraya eklenebilir */
+/* }
+*/
