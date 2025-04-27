@@ -36,8 +36,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          # Upload entire repository
-          path: '.'
+          name: deployment-package
+          path: '.' # veya deploy edilecek dosyalarınızın olduğu dizin
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
